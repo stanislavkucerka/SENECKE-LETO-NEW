@@ -60,8 +60,8 @@ h1 span{
 
 
 ::selection {
-  background: #fff;
-  color:#2fa68e;
+  /* background: #fff;
+  color:#2fa68e; */
 }
 
 ::-moz-selection {
