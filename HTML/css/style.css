@@ -18,12 +18,19 @@
  */
 
 html, body{
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Titan One', cursive;
   font-size:15px;
   -webkit-font-smoothing: subpixel-antialiased!important;
   color:black;
+  /*
   font-weight:400;
+  */
   height:100%;
+
+
+  /* TOTO SOM PRIDAL, NEBOL TU ZIADNY BACKGROUND PREDTYM */
+
+  background: linear-gradient(81deg, rgba(222,206,208,0.9878326330532213) 29%, rgba(254,205,39,0.8225665266106442) 46%, rgba(254,205,39,1) 100%, rgba(213,178,181,0.9710259103641457) 100%);
 }
 
 /*skušam aj toto či je pripojene*/
@@ -49,24 +56,28 @@ p{
 }
 
 .adresa {
-  letter-spacing: 10px;
+  letter-spacing: 9px;
 
 }
 
 
 h1 span{
-  color: #FF9E00;
+  color: #d62056;
 }
 
 
 ::selection {
-  /* background: #fff;
-  color:#2fa68e; */
+  /*background: #fff;
+  color:#2fa68e;
+  */
+  
 }
+
 
 ::-moz-selection {
   background: #fff;
   color:#2fa68e;
+  
 }
 
 
@@ -87,14 +98,24 @@ h1 span{
   position:relative;
   width:100%;
   height:580px;
+  /*
   background:url('../img/background/jazero_background.jpeg') 0px 0px fixed;
+  */
+
+  /*
+  background:url('../img/background/ohnostroj.jpg') 0px 0px fixed;
+*/
+
+  background:url('../img/background/background_nove_male.png') 0 0 fixed;
+  
 }
 
 .start-page .opacity{
   position:absolute;
   width:100%;
   height:580px;
-  background:rgba(0,0,0,0.7);
+  /* background:rgba(0,0,0,0.7); */
+  background:rgba(0,0,0,0.1); /* TOTO SOM PRIDAL*/
 }
 
 
@@ -118,15 +139,20 @@ h1 span{
 }
 
 .start-page .content .text{
-  position:absolute;
+  /* position:absolute; */
   text-align:center;
   margin:auto;
-  top:0; 
+  /* top:0; */
+  top: 200px; /* TOTO SOM PRIDAL */
   left:0; 
   bottom:0; 
   right:0;
   width:500px;
   height:320px;
+  /* TOTO SOM PRIDAL */
+  display: flex;
+  justify-content: center;
+  align-items: end;
 }
 
 .start-page .content .text .read-more{
@@ -139,7 +165,7 @@ h1 span{
   text-transform:uppercase;
   color:white;
   cursor:pointer;
-  font-size:19px;
+  font-size:15px;
   background:none;
   -webkit-transition: all 0.2s ease-in;
 	-moz-transition: all 0.2s ease-in;
@@ -230,12 +256,31 @@ h1 span{
   position:relative;
   width:100%;
   height:90px;
+  z-index:1000;
   /* background:#267AFF; */
 
+  /*
   background: rgb(255,158,0);
+  */
+  /*
+  background: #fbd024;
+  */
+  /*
   background: linear-gradient(0deg, rgba(255,158,0,1) 16%, rgba(213,178,181,1) 100%);
+*/
 
-  z-index:1000;
+/*
+background: rgb(222,206,208);
+background: linear-gradient(81deg, rgba(222,206,208,0.9878326330532213) 0%, rgba(254,205,39,0.8225665266106442) 46%, rgba(254,205,39,1) 100%, rgba(213,178,181,0.9710259103641457) 100%);
+*/
+
+/* TOTO SOM TU PRIDAL 13.4. o 0:14 */
+
+background: linear-gradient(81deg, rgba(222,206,208,0.9878326330532213) 29%, rgba(254,205,39,0.8225665266106442) 46%, rgba(254,205,39,1) 100%, rgba(213,178,181,0.9710259103641457) 100%);
+
+
+
+
 }
 
 .menu-content{
@@ -253,11 +298,28 @@ h1 span{
 /* TU SA BUDE ŠTYLOVAŤ BUTTON NA KUPENIE LISTKA */
 
 #listok {
-  color: green;
-  /* border: green 1px solid;
-  border-radius: 60px; */
+  /*color: green;
+  background-color: blue;
+  /*
+  border: green 3px solid;
+  */
+  /*border-radius: 60px; 
   font-weight: bold;
-  padding: 0 8px
+  padding: -10px -5px  0px;
+  */
+
+  /*
+  background-color: #4CAF50; /* Green */
+  background-color: #558eca;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  max-height: 100px;
+  padding: -8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 .menu-content .logo {
@@ -314,7 +376,7 @@ h1 span{
 }
 
 .menu-content li a{
-  color:#a3b2c0;
+  color: white;
   font-size:16px;
   display: block;
   padding: 0 20px 0 20px;
@@ -327,11 +389,11 @@ h1 span{
 }
 
 .menu-content li.active a{
-  background-color:#131a21;
+  background-color:#d62056;
 }
 
 .menu-content li a:hover{
-  color:white;
+  color: #558eca;
 }
 
 
@@ -347,7 +409,10 @@ h1 span{
 
 .about-us h1{
   font-size:56px;
-  color:black;
+  /*
+  color: #d62056;
+  */
+  color: black;
   text-align:center;
   margin-top:50px;
   font-weight:bold;
@@ -367,11 +432,18 @@ h1 span{
 }
 
 .about-us p.title{
+  /*
   color: #919191;
+  */
+  color: black;
+  font-weight: 900 !important; 
   margin-top:40px;
   width:100%;
-  font-size:15px;
+  font-size:20px;
+  letter-spacing: 1px;
   text-align:center;
+  line-height: 26px;
+  font-family: 'Lato', sans-serif;
 }
 
 .about-us h2{
@@ -384,6 +456,33 @@ h1 span{
   position:relative;
   font-weight:bold;
 }
+
+.cas{
+  font-size: 18px;
+  color:#558eca;
+  margin-left: 20px;
+}
+
+.line-up li{
+  list-style: none;
+  text-align: center;
+  line-height: 20px;
+}
+
+li{
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.line-up2 li{
+  list-style: none;
+  text-align: center;
+  line-height: 20px;
+
+}
+
 
 .about-us p{
   text-align:center;
@@ -402,19 +501,21 @@ h1 span{
   width: 50%;
   float:left;
   margin-bottom:70px;
-  height:350px;
+  height:100%;
 }
 
 .about-us .column-one .circle-one{
-  height: 174px;
+  /* height: 174px; */
+  height: 133px;
   position:relative;
   margin:0 auto;
-  border:8px solid #ebebeb;
-  background: url(../img/icons/responsive.png) #f3f3f3 no-repeat center center;
-  -moz-border-radius:174px;
+  /* border:8px solid #ebebeb; */
+  background: url(../img/icons/JOJKA_S_VAMI_FINAL.png) /* #f3f3f3 */ no-repeat center center;
+  /* -moz-border-radius:174px;
   -webkit-border-radius:174px;
-  border-radius: 174px;
-  width: 174px;
+  border-radius: 174px; */
+  /* width: 174px; */
+  width: 298px;
   cursor:pointer;
     -webkit-transition: all 0.2s ease-in;
 	-moz-transition: all 0.2s ease-in;
@@ -424,7 +525,7 @@ h1 span{
 }
 
 .about-us .column-one .circle-one:hover{
-  background: url(../img/icons/responsive.png) #2fa68e no-repeat center center;
+  background: url(../img/icons/JOJKA_S_VAMI_FINAL.png) /* #2fa68e */ no-repeat center center;
 
 }
 
@@ -438,15 +539,17 @@ h1 span{
 }
 
 .about-us .column-two .circle-two{
-  height: 174px;
+  /* height: 174px; */
+  height: 133px;
   position:relative;
   margin:0 auto;
-  border:8px solid #ebebeb;
-  background: url(../img/icons/minimalist.png) #f3f3f3 no-repeat center center;
-  -moz-border-radius:174px;
+  /* border:8px solid #ebebeb; */
+  background: url(../img/icons/jojko_bike_logo_133px_vyska.png) /* #f3f3f3 */ no-repeat center center;
+  /* -moz-border-radius:174px;
   -webkit-border-radius:174px;
-  border-radius: 174px;
-  width: 174px;
+  border-radius: 174px; 
+  width: 174px; */
+  width: 450px;
     cursor:pointer;
     -webkit-transition: all 0.2s ease-in;
 	-moz-transition: all 0.2s ease-in;
@@ -456,7 +559,7 @@ h1 span{
 }
 
 .about-us .column-two .circle-two:hover{
-  background: url(../img/icons/minimalist.png) #2fa68e no-repeat center center;
+  background: url(../img/icons/jojko_bike_logo_133px_vyska.png) /* #2fa68e */ no-repeat center center;
 }
 
 
@@ -498,7 +601,7 @@ h1 span{
 .portfolio{
   position:relative;
   width:100%;
-  background:#23282d;
+  background: #558eca;
 
 }
 
@@ -537,7 +640,10 @@ h1 span{
 
 .portfolio .portfolio-margin h1{
   font-size:56px;
-  color:white;
+  /*
+  color:#d62056;;
+  */
+  color: black;
   padding-top:50px;
   text-align:center;
   font-weight:bold;
@@ -584,7 +690,10 @@ h1 span{
   position: absolute;
   width: 300px;
   height: 225px;
+  background:  #d62056;
+  /*
   background: #2fa68e;
+  */
   z-index: 2;
   opacity:0;
 }
@@ -613,11 +722,15 @@ h1 span{
 /* Partners */
 
 .partners{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   position:relative;
   width:100%;
   height:307px;
-  /* background:url('../img/background/partners.jpg') 0px 0px fixed; */
-  background: url(https://wallpaperaccess.com/full/1921933.jpg) 0px 0px fixed;
+  background:url('../img/background/jazero_background.jpeg') 0px 0px fixed; 
+  /* background: url(https://wallpaperaccess.com/full/1921933.jpg) 0px 0px fixed; */
 }
 
 .partners .opacity{
@@ -641,13 +754,26 @@ h1 span{
 .partners h2{
   color:white;
   font-size:32px;
+  letter-spacing: 2px;
   font-weight:300;
   text-align:center;
 }
 
 .partners .logo{
+  /*
   position:relative;
   width:900px;
+  */
+  display: flex;
+  justify-content: space-between;
+  overflow:hidden;
+  margin-top:50px;
+  text-align:center;
+}
+
+.partners .logo-media {
+  display: flex;
+  justify-content: center;
   overflow:hidden;
   margin-top:50px;
   text-align:center;
@@ -669,11 +795,52 @@ h1 span{
 /* Contact */
 
 .contact{
-  position:relative;
+ /* position:relative;
   width:900px;
-  margin: 0 auto;  
+  margin: 0 auto;  */
+
+  /*TOTO SOM PRIDAL NOVÉ !!-------------------------------------------------*/ 
+    position: relative;
+    margin: 0 auto;
+    background: #558eca;
+    height: 700px;
   
 }
+
+
+/* TOTO SOM TU PRIDAL NOVE !!!!!--------------------------------------------------------- */
+.contact-mapa {
+  text-align: center;
+  height: 600px;
+  position:relative;
+  height: 1070px;
+}
+
+.contact-mapa h1{
+  font-size:56px;
+  color:black;
+  padding-top:50px;
+  text-align:center;
+  font-weight:bold;
+  text-transform:uppercase;
+  line-height:1.2;
+
+}
+
+.contact-mapa hr{
+  margin-top:30px;
+  background-color: black;
+  height: 1px;
+  width:340px;
+  border:0;
+}
+
+.contact-mapa .mapa-fotka {
+  margin-left: -180px;
+}
+
+
+/*---------------------------------------------------------------------------------------------*/
 
 .contact h1{
   font-size:56px;
@@ -696,10 +863,16 @@ h1 span{
 
 
 .contact .content{
-  position:relative;
+ /* position:relative;
   width:900px;
   overflow:hidden;
-  margin: 60px 0 65px 0;  
+  margin: 60px 0 65px 0;  */
+
+  /*TOTO SOM PRIDAL NOVÉ !!--------------------------------*/ 
+  overflow: hidden;
+  margin: 60px 0 65px 0;
+  display: flex;
+  justify-content: center;
   
 }
 
@@ -717,7 +890,8 @@ h1 span{
   height:auto;
   float:left;
   padding-left:40px;
-  color:black;
+  letter-spacing: 3px;
+  color:white;
   font-size:17px;
   line-height:1.7;
 }
@@ -789,7 +963,10 @@ textarea{
 
 .contact .content .form .button:hover{
   color:white;
+  color: rgb(255,158,0);
+  /*
   background:#2fa68e;
+  */
 }
 
 /* Footer */
@@ -799,7 +976,7 @@ textarea{
   position:relative;
   width:100%;
   height:90px;
-  background:#23282d;
+  background:#558eca; 
 
 }
 
@@ -815,8 +992,15 @@ textarea{
   /* width:450px; */
   margin:0 auto;
   float:left;
+
 }
 
+@media only screen and (max-width: 600px) {
+  .footer .margin .menu-footer {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  }}
 
 .footer .margin .menu-footer a{
   line-height:90px;

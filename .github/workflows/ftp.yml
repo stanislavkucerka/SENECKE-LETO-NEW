@@ -1,0 +1,27 @@
+on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+name: 🚀 Nahrať na FTP server
+jobs:
+  web-deploy:
+    name: 🚀 Nahrať na FTP server
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📂 NAHRAŤ NA FTP SERVER
+        uses: SamKirkland/FTP-Deploy-Action@4.3.2
+        with:
+          server: seneckeleto.sk
+          username: becode.seneckeleto.sk
+          password: RTdnn2Bx
+          local-dir: ./HTML/
+          server-dir: public_html/
+          port: 21
+          protocol: ftp
+          timeout: 100000
