@@ -10,94 +10,86 @@
 /* Font Google - strong reaload time */
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,700,900&subset=latin,latin-ext);
 
-
 /*
  * Theme Name: Onepage
  * Author: Thomsoon
  * Created: 15/02/2014
  */
 
-html, body{
-  font-family: 'Titan One', cursive;
-  font-size:15px;
-  -webkit-font-smoothing: subpixel-antialiased!important;
-  color:black;
+html,
+body {
+  font-family: "Titan One", cursive;
+  font-size: 15px;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  color: black;
   /*
   font-weight:400;
   */
-  height:100%;
-
+  height: 100%;
 
   /* TOTO SOM PRIDAL, NEBOL TU ZIADNY BACKGROUND PREDTYM */
 
-  background: linear-gradient(81deg, rgba(222,206,208,0.9878326330532213) 29%, rgba(254,205,39,0.8225665266106442) 46%, rgba(254,205,39,1) 100%, rgba(213,178,181,0.9710259103641457) 100%);
+  background: linear-gradient(
+    81deg,
+    rgba(222, 206, 208, 0.9878326330532213) 29%,
+    rgba(254, 205, 39, 0.8225665266106442) 46%,
+    #fecd27 100%,
+    rgba(213, 178, 181, 0.9710259103641457) 100%
+  );
 }
 
 /*skušam aj toto či je pripojene*/
 
-a{
-  text-decoration:none;
-  outline:none;
+a {
+  text-decoration: none;
+  outline: none;
 }
 
-h1{
-  font-size:56px;
-  color:white;
-  font-weight:bold;
-  text-transform:uppercase;
-  line-height:1.2;
+h1 {
+  font-size: 56px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
 }
 
-p{
-  font-size:19px;
-  color:white;
-  margin-top:50px;
-
+p {
+  font-size: 19px;
+  color: white;
+  margin-top: 50px;
 }
 
 .adresa {
   letter-spacing: 9px;
-
 }
 
-
-h1 span{
+h1 span {
   color: #d62056;
 }
-
 
 ::selection {
   /*background: #fff;
   color:#2fa68e;
   */
-  
 }
-
 
 ::-moz-selection {
   background: #fff;
-  color:#2fa68e;
-  
+  color: #2fa68e;
 }
 
-
-.container{
-  position:absolute;
-  width:100%;
-  height:100%;
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
-
-
-
-
-
 
 /* Start page */
 
-.start-page{
-  position:relative;
-  width:100%;
-  height:580px;
+.start-page {
+  position: relative;
+  width: 100%;
+  height: 580px;
   /*
   background:url('../img/background/jazero_background.jpeg') 0px 0px fixed;
   */
@@ -106,80 +98,78 @@ h1 span{
   background:url('../img/background/ohnostroj.jpg') 0px 0px fixed;
 */
 
-  background:url('../img/background/background_nove_male.png') 0 0 fixed;
-  
+  background: url("../img/background/background_nove_male.png") 0 0 fixed;
 }
 
-.start-page .opacity{
-  position:absolute;
-  width:100%;
-  height:580px;
+.start-page .opacity {
+  position: absolute;
+  width: 100%;
+  height: 580px;
   /* background:rgba(0,0,0,0.7); */
-  background:rgba(0,0,0,0.1); /* TOTO SOM PRIDAL*/
+  background: rgba(0, 0, 0, 0.1); /* TOTO SOM PRIDAL*/
 }
 
-
-.start-page .content{
-  position:relative;
-  width:900px;
-  margin:0 auto;
-  height:580px;
+.start-page .content {
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
+  height: 580px;
 }
 
-.start-page .content .text{
-  position:absolute;
-  text-align:center;
-  margin:auto;
-  top:0; 
-  left:0; 
-  bottom:0; 
-  right:0;
-  width:500px;
-  height:320px;
+.start-page .content .text {
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 500px;
+  height: 320px;
 }
 
-.start-page .content .text{
+.start-page .content .text {
   /* position:absolute; */
-  text-align:center;
-  margin:auto;
+  text-align: center;
+  margin: auto;
   /* top:0; */
   top: 200px; /* TOTO SOM PRIDAL */
-  left:0; 
-  bottom:0; 
-  right:0;
-  width:500px;
-  height:320px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 500px;
+  height: 320px;
   /* TOTO SOM PRIDAL */
   display: flex;
   justify-content: center;
   align-items: end;
 }
 
-.start-page .content .text .read-more{
-  width:183px;
-  height:47px;
-  margin:50px auto;
-  line-height:47px;
-  border:1px solid white;
+.start-page .content .text .read-more {
+  width: 183px;
+  height: 47px;
+  margin: 50px auto;
+  line-height: 47px;
+  border: 1px solid white;
   border-radius: 20px;
-  text-transform:uppercase;
-  color:white;
-  cursor:pointer;
-  font-size:15px;
-  background:none;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  background: none;
   -webkit-transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in;
-	-ms-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
-.start-page .content .text .read-more:hover{
-  color:black;
-  background:white;
+.start-page .content .text .read-more:hover {
+  color: black;
+  background: white;
 }
 
-.start-page .content .arrow-down{
+.start-page .content .arrow-down {
   position: absolute;
   bottom: 110px;
   left: 50%;
@@ -189,74 +179,93 @@ h1 span{
   background: url(../img/arrow-down.png) no-repeat center center;
   display: block;
   -webkit-animation: bounce-fade 1.2s infinite; /* Safari 4+ */
-  -moz-animation:    bounce-fade 1.2s infinite; /* Fx 5+ */
-  -o-animation:      bounce-fade 1.2s infinite; /* Opera 12+ */
-   animation:        bounce-fade 1.2s infinite; /* IE 10+ */
+  -moz-animation: bounce-fade 1.2s infinite; /* Fx 5+ */
+  -o-animation: bounce-fade 1.2s infinite; /* Opera 12+ */
+  animation: bounce-fade 1.2s infinite; /* IE 10+ */
 }
-
 
 @-webkit-keyframes bounce-fade {
-    0%   { opacity: 0; bottom: 70px; }
-    100% { opacity: 1; bottom: 35px; }
+  0% {
+    opacity: 0;
+    bottom: 70px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 35px;
+  }
 }
 @-moz-keyframes bounce-fade {
-    0%   { opacity: 0; bottom: 70px; }
-    100% { opacity: 1; bottom: 35px; }
+  0% {
+    opacity: 0;
+    bottom: 70px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 35px;
+  }
 }
 @-o-keyframes bounce-fade {
-    0%   { opacity: 0; bottom:70px; }
-    100% { opacity: 1; bottom: 35px; }
+  0% {
+    opacity: 0;
+    bottom: 70px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 35px;
+  }
 }
 @keyframes bounce-fade {
-    0%   { opacity: 0; bottom: 70px; }
-    100% { opacity: 1; bottom: 35px; }
+  0% {
+    opacity: 0;
+    bottom: 70px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 35px;
+  }
 }
-
 
 /* Menu mobile */
 
-.menu-media{
-  position:relative;
-  width:100%;
-  height:90px;
-  background:#2f363e;
-  z-index:1000;
-  display:none;
+.menu-media {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  background: #2f363e;
+  z-index: 1000;
+  display: none;
 }
 
-.menu-media .menu-content{
-  width:280px;
-  position:relative;
-  margin:0 auto;
+.menu-media .menu-content {
+  width: 280px;
+  position: relative;
+  margin: 0 auto;
 }
 
 .menu-media .menu-content .logo {
-   color:white;
-   font-weight:700;
-   font-size:30px;
-   width:200px;
-   line-height:90px;
-   float:left;
-   list-style: none;
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  width: 200px;
+  line-height: 90px;
+  float: left;
+  list-style: none;
 }
 
-.menu-media .menu-content .icon{
-
-  width:41px;
-  height:23px;
-  float:right;
-  line-height:100px;
-
+.menu-media .menu-content .icon {
+  width: 41px;
+  height: 23px;
+  float: right;
+  line-height: 100px;
 }
-
 
 /* Menu */
 
-.menu{
-  position:relative;
-  width:100%;
-  height:90px;
-  z-index:1000;
+.menu {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  z-index: 1000;
   /* background:#267AFF; */
 
   /*
@@ -269,21 +278,23 @@ h1 span{
   background: linear-gradient(0deg, rgba(255,158,0,1) 16%, rgba(213,178,181,1) 100%);
 */
 
-/*
+  /*
 background: rgb(222,206,208);
 background: linear-gradient(81deg, rgba(222,206,208,0.9878326330532213) 0%, rgba(254,205,39,0.8225665266106442) 46%, rgba(254,205,39,1) 100%, rgba(213,178,181,0.9710259103641457) 100%);
 */
 
-/* TOTO SOM TU PRIDAL 13.4. o 0:14 */
+  /* TOTO SOM TU PRIDAL 13.4. o 0:14 */
 
-background: linear-gradient(81deg, rgba(222,206,208,0.9878326330532213) 29%, rgba(254,205,39,0.8225665266106442) 46%, rgba(254,205,39,1) 100%, rgba(213,178,181,0.9710259103641457) 100%);
-
-
-
-
+  background: linear-gradient(
+    81deg,
+    rgba(222, 206, 208, 0.9878326330532213) 29%,
+    rgba(254, 205, 39, 0.8225665266106442) 46%,
+    rgba(254, 205, 39, 1) 100%,
+    rgba(213, 178, 181, 0.9710259103641457) 100%
+  );
 }
 
-.menu-content{
+.menu-content {
   /* 
   width:900px;
   position:relative; 
@@ -292,7 +303,6 @@ background: linear-gradient(81deg, rgba(222,206,208,0.9878326330532213) 29%, rgb
   margin: 0 1.875em;
   display: flex;
   justify-content: space-between;
-
 }
 
 /* TU SA BUDE ŠTYLOVAŤ BUTTON NA KUPENIE LISTKA */
@@ -323,363 +333,360 @@ background: linear-gradient(81deg, rgba(222,206,208,0.9878326330532213) 29%, rgb
 }
 
 .menu-content .logo {
-   color:white;
-   /* background:#2f363e; */
-   font-weight:700;
-   font-size:30px;
-   width:300px;
-   line-height:90px;
-   float:left;
-   list-style: none;
- }
-
-
-.menu-click{
-  display:none;
+  color: white;
+  /* background:#2f363e; */
+  font-weight: 700;
+  font-size: 30px;
+  width: 300px;
+  line-height: 90px;
+  float: left;
+  list-style: none;
 }
 
+.menu-click {
+  display: none;
+}
 
 .menu-click li {
-  position:relative;
-  width:100%;
-  height:70px;
-  color:white;
-  font-size:29px;
-  text-align:center;
-  line-height:70px;
-  background:#2fa68e;
-  z-index:1000;
-  border-bottom:1px solid #1a7966;
+  position: relative;
+  width: 100%;
+  height: 70px;
+  color: white;
+  font-size: 29px;
+  text-align: center;
+  line-height: 70px;
+  background: #fecd27;
+  z-index: 1000;
+  border-bottom: 1px solid #1a7966;
   -webkit-transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in;
-	-ms-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in;
- }
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
 
 .menu-click li:hover {
-  color:#2f363e;
- }
+  color: #2f363e;
+}
 
-.menu-content ul{
-
+.menu-content ul {
   /* width:500px; */
-  left:50%;
-  float:right;
-  text-align:right;
-  list-style:none;
+  left: 50%;
+  float: right;
+  text-align: right;
+  list-style: none;
 }
 
-.menu-content li{
-   display:inline-block;
-   position:relative;
+.menu-content li {
+  display: inline-block;
+  position: relative;
 }
 
-.menu-content li a{
+.menu-content li a {
   color: white;
-  font-size:16px;
+  font-size: 16px;
   display: block;
   padding: 0 20px 0 20px;
-  line-height:90px;
+  line-height: 90px;
   -webkit-transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in;
-	-ms-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
-.menu-content li.active a{
-  background-color:#d62056;
+.menu-content li.active a {
+  background-color: #d62056;
 }
 
-.menu-content li a:hover{
+.menu-content li a:hover {
   color: #558eca;
 }
 
-
 /* About us */
 
-.about-us{
-  position:relative;
-  width:900px;
-  margin:0 auto;
-  margin-bottom:10px;
-
+.about-us {
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
-.about-us h1{
-  font-size:56px;
+.about-us h1 {
+  font-size: 56px;
   /*
   color: #d62056;
   */
   color: black;
-  text-align:center;
-  margin-top:50px;
-  font-weight:bold;
-  text-transform:uppercase;
-  line-height:1.2;
-
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
 }
 
-.about-us hr{
+.about-us hr {
   color: black;
-  margin-top:30px;
+  margin-top: 30px;
   background-color: black;
   height: 1px;
-  width:340px;
-  border:0;
-
+  width: 340px;
+  border: 0;
 }
 
-.about-us p.title{
+.about-us p.title {
   /*
   color: #919191;
   */
   color: black;
-  font-weight: 900 !important; 
-  margin-top:40px;
-  width:100%;
-  font-size:20px;
+  font-weight: 900 !important;
+  margin-top: 40px;
+  width: 100%;
+  font-size: 20px;
   letter-spacing: 1px;
-  text-align:center;
+  text-align: center;
   line-height: 26px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
-.about-us h2{
-  text-align:center;
-  margin-top:20px;
-  font-size:29px;
-  color:black;
-  line-height:1.2;
-  width:100%;
-  position:relative;
-  font-weight:bold;
+.about-us h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 29px;
+  color: black;
+  line-height: 1.2;
+  width: 100%;
+  position: relative;
+  font-weight: bold;
 }
 
-.cas{
+.cas {
   font-size: 18px;
-  color:#558eca;
+  color: #558eca;
   margin-left: 20px;
 }
 
-.line-up li{
+.line-up li {
   list-style: none;
   text-align: center;
   line-height: 20px;
 }
 
-li{
+li {
   color: black;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 15px;
 }
 
-.line-up2 li{
+.line-up2 li {
   list-style: none;
   text-align: center;
   line-height: 20px;
-
 }
 
-
-.about-us p{
-  text-align:center;
-  margin-top:20px;
-  font-size:15px;
-  width:100%;
-  color:#919191;
-  line-height:1.4;
-  position:relative;
-  font-weight:400;
+.about-us p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+  width: 100%;
+  color: #919191;
+  line-height: 1.4;
+  position: relative;
+  font-weight: 400;
 }
 
-.about-us .column-one{
-  margin-top:40px;
- /* width:300px; */
+.about-us .column-one {
+  margin-top: 40px;
+  /* width:300px; */
   width: 50%;
-  float:left;
-  margin-bottom:70px;
-  height:100%;
+  float: left;
+  margin-bottom: 70px;
+  height: 100%;
 }
 
-.about-us .column-one .circle-one{
+.about-us .column-one .circle-one {
   /* height: 174px; */
   height: 133px;
-  position:relative;
-  margin:0 auto;
+  position: relative;
+  margin: 0 auto;
   /* border:8px solid #ebebeb; */
-  background: url(../img/icons/JOJKA_S_VAMI_FINAL.png) /* #f3f3f3 */ no-repeat center center;
+  background: url(../img/icons/JOJKA_S_VAMI_FINAL.png) /* #f3f3f3 */ no-repeat
+    center center;
   /* -moz-border-radius:174px;
   -webkit-border-radius:174px;
   border-radius: 174px; */
   /* width: 174px; */
   width: 298px;
-  cursor:pointer;
-    -webkit-transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in;
-	-ms-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
-.about-us .column-one .circle-one:hover{
-  background: url(../img/icons/JOJKA_S_VAMI_FINAL.png) /* #2fa68e */ no-repeat center center;
-
+.about-us .column-one .circle-one:hover {
+  background: url(../img/icons/JOJKA_S_VAMI_FINAL.png) /* #2fa68e */ no-repeat
+    center center;
 }
 
-.about-us .column-two{
-  margin-top:40px;
- /* width:300px; */
+.about-us .column-two {
+  margin-top: 40px;
+  /* width:300px; */
   width: 50%;
-  float:left;
-  margin-bottom:70px;
-  height:350px;
+  float: left;
+  margin-bottom: 70px;
+  height: 350px;
 }
 
-.about-us .column-two .circle-two{
+.about-us .column-two .circle-two {
   /* height: 174px; */
-  height: 133px;
-  position:relative;
-  margin:0 auto;
+  position: relative;
+  margin: 0 auto;
   /* border:8px solid #ebebeb; */
-  background: url(../img/icons/jojko_bike_logo_133px_vyska.png) /* #f3f3f3 */ no-repeat center center;
+  background: url(../img/icons/jojko_bike_logo_133px_vyska.png) /* #f3f3f3 */
+    no-repeat center center;
   /* -moz-border-radius:174px;
   -webkit-border-radius:174px;
   border-radius: 174px; 
   width: 174px; */
-  width: 450px;
-    cursor:pointer;
-    -webkit-transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in;
-	-ms-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in;
+  height: 100px;
+  width: 100%;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
-.about-us .column-two .circle-two:hover{
-  background: url(../img/icons/jojko_bike_logo_133px_vyska.png) /* #2fa68e */ no-repeat center center;
+.about-us .column-two .circle-two:hover {
+  background: url(../img/icons/jojko_bike_logo_133px_vyska.png) /* #2fa68e */
+    no-repeat center center;
 }
 
-
-.about-us .column-three{ 
-  margin-top:40px;
-  width:300px;
-  float:left;
-  margin-bottom:70px;
-  height:350px;
+@media screen and (max-width: 768px) {
+  .about-us .column-two .circle-two {
+    display: none;
+  }
+  #interpreti {
+    font-size: 3em;
+  }
 }
 
-.about-us .column-three .circle-three{ 
+.about-us .column-three {
+  margin-top: 40px;
+  width: 300px;
+  float: left;
+  margin-bottom: 70px;
+  height: 350px;
+}
+
+.about-us .column-three .circle-three {
   height: 174px;
-  position:relative;
-  margin:0 auto;
-  border:8px solid #ebebeb;
+  position: relative;
+  margin: 0 auto;
+  border: 8px solid #ebebeb;
   background: url(../img/icons/free.png) #f3f3f3 no-repeat center center;
-  -moz-border-radius:174px;
-  -webkit-border-radius:174px;
+  -moz-border-radius: 174px;
+  -webkit-border-radius: 174px;
   border-radius: 174px;
   width: 174px;
-  cursor:pointer;
+  cursor: pointer;
   -webkit-transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in;
-	-ms-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
-.about-us .column-three .circle-three:hover{ 
+.about-us .column-three .circle-three:hover {
   background: url(../img/icons/free.png) #2fa68e no-repeat center center;
 }
 
-
-
 /* Portfolio */
 
-
-.portfolio{
-  position:relative;
-  width:100%;
+.portfolio {
+  position: relative;
+  width: 100%;
   background: #558eca;
-
 }
 
-.portfolio .portfolio-margin{
-  position:relative;
-  width:900px;
-  overflow:hidden;
-  margin:0 auto;
+.portfolio .portfolio-margin {
+  position: relative;
+  width: 900px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
-.portfolio .portfolio-margin .read-more{
-  width:183px;
-  height:47px;
-  position:relative;
-  margin:50px auto;
-  line-height:47px;
-  border:1px solid white;
+.portfolio .portfolio-margin .read-more {
+  width: 183px;
+  height: 47px;
+  position: relative;
+  margin: 50px auto;
+  line-height: 47px;
+  border: 1px solid white;
   border-radius: 30px; /* TOTO SOM TU PRIDAL ABY SA ZAOBLIL BUTTON "další" */
-  text-transform:uppercase;
-  text-align:center;
-  color:white;
-  cursor:pointer;
-  font-size:19px;
-  background:none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 19px;
+  background: none;
   -webkit-transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in;
-	-ms-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
-.portfolio .portfolio-margin .read-more:hover{
-  color:black;
-  background:white;
+.portfolio .portfolio-margin .read-more:hover {
+  color: black;
+  background: white;
 }
 
-.portfolio .portfolio-margin h1{
-  font-size:56px;
+.portfolio .portfolio-margin h1 {
+  font-size: 56px;
   /*
   color:#d62056;;
   */
   color: black;
-  padding-top:50px;
-  text-align:center;
-  font-weight:bold;
-  text-transform:uppercase;
-  line-height:1.2;
-
+  padding-top: 50px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
 }
 
-.portfolio .portfolio-margin hr{
+.portfolio .portfolio-margin hr {
   color: black;
-  margin-top:30px;
+  margin-top: 30px;
   background-color: white;
   height: 1px;
-  width:340px;
-  border:0;
+  width: 340px;
+  border: 0;
 }
 
 /* Portfolio grid */
 
-.grid{
-  margin-top:70px;
-  width:100%;
-  position:relative;
-  margin-bottom:70px;
-  overflow:hidden;
+.grid {
+  margin-top: 70px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 70px;
+  overflow: hidden;
 }
 
-.grid li{
-  width:300px;
-  height:225px;
+.grid li {
+  width: 300px;
+  height: 225px;
   float: left;
   position: relative;
   overflow: auto;
 }
 
-.grid img{
+.grid img {
   width: 100%;
   height: 225px;
   float: left;
@@ -690,280 +697,269 @@ li{
   position: absolute;
   width: 300px;
   height: 225px;
-  background:  #d62056;
+  background: #d62056;
   /*
   background: #2fa68e;
   */
   z-index: 2;
-  opacity:0;
+  opacity: 0;
 }
 
 .grid p {
   font-size: 29px;
-  text-align:center;
-  margin-top:80px;
+  text-align: center;
+  margin-top: 80px;
   font-weight: bold;
-  color: #FFF;
+  color: #fff;
 }
 
 .grid p.description {
   font-size: 15px;
-  width:300px;
-  margin-top:20px;
-  text-align:center;
+  width: 300px;
+  margin-top: 20px;
+  text-align: center;
   font-weight: 400;
-  color: #FFF;
+  color: #fff;
 }
 
-.clear { 
-    clear:both; 
+.clear {
+  clear: both;
 }
 
 /* Partners */
 
-.partners{
-  display:flex;
+.partners {
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  position:relative;
-  width:100%;
-  height:307px;
-  background:url('../img/background/jazero_background.jpeg') 0px 0px fixed; 
+  position: relative;
+  width: 100%;
+  height: 307px;
+  background: url("../img/background/jazero_background.jpeg") 0px 0px fixed;
   /* background: url(https://wallpaperaccess.com/full/1921933.jpg) 0px 0px fixed; */
 }
 
-.partners .opacity{
-  position:absolute;
-  width:100%;
-  height:307px;
-  background:rgba(0,0,0,0.8);
+.partners .opacity {
+  position: absolute;
+  width: 100%;
+  height: 307px;
+  background: rgba(0, 0, 0, 0.8);
 }
 
-.partners .content{
-  position:absolute;
-  width:900px;
-  height:190px;
-  margin:auto;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
+.partners .content {
+  position: absolute;
+  width: 900px;
+  height: 190px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-.partners h2{
-  color:white;
-  font-size:32px;
+.partners h2 {
+  color: white;
+  font-size: 32px;
   letter-spacing: 2px;
-  font-weight:300;
-  text-align:center;
+  font-weight: 300;
+  text-align: center;
 }
 
-.partners .logo{
+.partners .logo {
   /*
   position:relative;
   width:900px;
   */
   display: flex;
   justify-content: space-between;
-  overflow:hidden;
-  margin-top:50px;
-  text-align:center;
+  overflow: hidden;
+  margin-top: 50px;
+  text-align: center;
 }
 
 .partners .logo-media {
   display: flex;
   justify-content: center;
-  overflow:hidden;
-  margin-top:50px;
-  text-align:center;
+  overflow: hidden;
+  margin-top: 50px;
+  text-align: center;
 }
 
-.partners .logo img{
-  opacity:0.5;
+.partners .logo img {
+  opacity: 0.5;
   -webkit-transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in;
-	-ms-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
-.partners .logo img:hover{
-  opacity:1;
+.partners .logo img:hover {
+  opacity: 1;
 }
 
 /* Contact */
 
-.contact{
- /* position:relative;
+.contact {
+  /* position:relative;
   width:900px;
   margin: 0 auto;  */
 
-  /*TOTO SOM PRIDAL NOVÉ !!-------------------------------------------------*/ 
-    position: relative;
-    margin: 0 auto;
-    background: #558eca;
-    height: 700px;
-  
+  /*TOTO SOM PRIDAL NOVÉ !!-------------------------------------------------*/
+  position: relative;
+  margin: 0 auto;
+  background: #558eca;
+  height: 700px;
 }
-
 
 /* TOTO SOM TU PRIDAL NOVE !!!!!--------------------------------------------------------- */
 .contact-mapa {
   text-align: center;
   height: 600px;
-  position:relative;
+  position: relative;
   height: 1070px;
 }
 
-.contact-mapa h1{
-  font-size:56px;
-  color:black;
-  padding-top:50px;
-  text-align:center;
-  font-weight:bold;
-  text-transform:uppercase;
-  line-height:1.2;
-
+.contact-mapa h1 {
+  font-size: 56px;
+  color: black;
+  padding-top: 50px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
 }
 
-.contact-mapa hr{
-  margin-top:30px;
+.contact-mapa hr {
+  margin-top: 30px;
   background-color: black;
   height: 1px;
-  width:340px;
-  border:0;
+  width: 340px;
+  border: 0;
 }
 
 .contact-mapa .mapa-fotka {
   margin-left: -180px;
 }
 
-
 /*---------------------------------------------------------------------------------------------*/
 
-.contact h1{
-  font-size:56px;
-  color:black;
-  padding-top:50px;
-  text-align:center;
-  font-weight:bold;
-  text-transform:uppercase;
-  line-height:1.2;
-
+.contact h1 {
+  font-size: 56px;
+  color: black;
+  padding-top: 50px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
 }
 
-.contact hr{
-  margin-top:30px;
+.contact hr {
+  margin-top: 30px;
   background-color: black;
   height: 1px;
-  width:340px;
-  border:0;
+  width: 340px;
+  border: 0;
 }
 
-
-.contact .content{
- /* position:relative;
+.contact .content {
+  /* position:relative;
   width:900px;
   overflow:hidden;
   margin: 60px 0 65px 0;  */
 
-  /*TOTO SOM PRIDAL NOVÉ !!--------------------------------*/ 
+  /*TOTO SOM PRIDAL NOVÉ !!--------------------------------*/
   overflow: hidden;
   margin: 60px 0 65px 0;
   display: flex;
   justify-content: center;
-  
 }
 
-.contact .content .form{
-  width:455px;
-  overflow:hidden;
-  height:auto;
-  float:left;
- 
+.contact .content .form {
+  width: 455px;
+  overflow: hidden;
+  height: auto;
+  float: left;
 }
 
-.contact .content .contact-text{
-  width:405px;
-  overflow:hidden;
-  height:auto;
-  float:left;
-  padding-left:40px;
+.contact .content .contact-text {
+  width: 405px;
+  overflow: hidden;
+  height: auto;
+  float: left;
+  padding-left: 40px;
   letter-spacing: 3px;
-  color:white;
-  font-size:17px;
-  line-height:1.7;
+  color: white;
+  font-size: 17px;
+  line-height: 1.7;
 }
 
-strong{
-  font-weight:700;
-
+strong {
+  font-weight: 700;
 }
 
-input{
-
-  width:420px;
-  height:40px;
-  background:#23282d;
-  border:0;
-  color:white;
-  font-weight:bold;
-  line-height:40px;
-  padding-left:35px;
-  -moz-border-radius:4px;
-  -webkit-border-radius:4px;
+input {
+  width: 420px;
+  height: 40px;
+  background: #23282d;
+  border: 0;
+  color: white;
+  font-weight: bold;
+  line-height: 40px;
+  padding-left: 35px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
   border-radius: 4px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size:17px;
-  margin-bottom:10px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 17px;
+  margin-bottom: 10px;
 }
 
-textarea{
-
-  width:420px;
-  height:283px;
-  background:#23282d;
-  border:0;
-  color:white;
-  font-weight:bold;
-  padding:15px 0 0 35px;
-  -moz-border-radius:4px;
-  -webkit-border-radius:4px;
+textarea {
+  width: 420px;
+  height: 283px;
+  background: #23282d;
+  border: 0;
+  color: white;
+  font-weight: bold;
+  padding: 15px 0 0 35px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
   border-radius: 4px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size:17px;
-  margin-bottom:10px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 17px;
+  margin-bottom: 10px;
 }
 
-.contact .content .form .button{
-  width:142px;
-  height:34px;
-  float:right;
-  margin:0;
-  background:#23282d;
-  border:0;
-  -moz-border-radius:4px;
-  -webkit-border-radius:4px;
+.contact .content .form .button {
+  width: 142px;
+  height: 34px;
+  float: right;
+  margin: 0;
+  background: #23282d;
+  border: 0;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
   border-radius: 4px;
-    -webkit-transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in;
-	-ms-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
-.contact .content .form a .button{
-  text-align:center;
-  color:white;
-  font-weight:bold;
-  line-height:34px;
-  font-size:17px;
+.contact .content .form a .button {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  line-height: 34px;
+  font-size: 17px;
 }
 
-.contact .content .form .button:hover{
-  color:white;
-  color: rgb(255,158,0);
+.contact .content .form .button:hover {
+  color: white;
+  color: rgb(255, 158, 0);
   /*
   background:#2fa68e;
   */
@@ -971,60 +967,56 @@ textarea{
 
 /* Footer */
 
-
-.footer{
-  position:relative;
-  width:100%;
-  height:90px;
-  background:#558eca; 
-
+.footer {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  background: #558eca;
 }
 
-.footer .margin{
-  position:relative;
+.footer .margin {
+  position: relative;
   /* width:900px; */
   width: 1200px;
-  margin:0 auto;
-  height:90px;
+  margin: 0 auto;
+  height: 90px;
 }
 
-.footer .margin .menu-footer{
+.footer .margin .menu-footer {
   /* width:450px; */
-  margin:0 auto;
-  float:left;
-
+  margin: 0 auto;
+  float: left;
 }
 
 @media only screen and (max-width: 600px) {
   .footer .margin .menu-footer {
     display: flex;
-  flex-direction: column;
-  align-items: center;
-  }}
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
-.footer .margin .menu-footer a{
-  line-height:90px;
-  padding-right:25px;
-  color:#5f666e;
+.footer .margin .menu-footer a {
+  line-height: 90px;
+  padding-right: 25px;
+  color: #5f666e;
   -webkit-transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in;
-	-ms-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
-.footer .margin .menu-footer a:hover{
-  color:white;
+.footer .margin .menu-footer a:hover {
+  color: white;
 }
 
-
-.footer .margin .copyright{
-  width:420px;
-  margin:0 auto;
-  text-align:right;
-  float:left;
-  line-height:90px;
-  padding-right:25px;
-  color:#5f666e;
+.footer .margin .copyright {
+  width: 420px;
+  margin: 0 auto;
+  text-align: right;
+  float: left;
+  line-height: 90px;
+  padding-right: 25px;
+  color: #5f666e;
 }
-
